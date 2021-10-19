@@ -2,6 +2,7 @@ import React from 'react';
 import useAuth from '../../../hooks/useAuth';
 import { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
+import { useHistory, useLocation } from 'react-router';
 
 
 
@@ -9,6 +10,19 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, se
 const Login = () => {
     const { googleSignIn } = useAuth();
     const auth = getAuth();
+
+// using use history to direct location.......
+    const location = useLocation();
+    const history = useHistory()
+    const redirect_uri = location.state?.from || '/home';
+
+    const handleGoogleLogin = () => {
+        googleSignIn()
+            .then(result => {
+                history.push(redirect_uri)
+       })
+
+    }
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -90,7 +104,7 @@ const Login = () => {
             })
     }
     return (
-        <div className="main container d-flex justify-content-center align-items-center" style={{ height: '550px', width: '680px' ,border:'1px solid gray' }}>
+        <div className="main container d-flex justify-content-center align-items-center" style={{ height: '550px', width: '680px', border: '1px solid gray' }}>
             <div className="mx-5 container" >
                 <form onSubmit={handleRegistration}>
                     <h4 className="text-dark text-center fw-bold"><i class="fas fa-user-edit text-warning"></i> <br />
@@ -112,7 +126,7 @@ const Login = () => {
                     <div className="row mb-3">
                         <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                         <div className="col-sm-10">
-                            <input type="password" onBlur={handlePasswordChange}  placeholder="Your password" className="form-control" id="inputPassword3" required />
+                            <input type="password" onBlur={handlePasswordChange} placeholder="Your password" className="form-control" id="inputPassword3" required />
                         </div>
                     </div>
                     <div className="row mb-3">
@@ -126,14 +140,14 @@ const Login = () => {
                         </div>
                         <div className="row mb-3 text-danger d-flex justify-content-center align-items-center">{error}</div>
                     </div>
-                    
+
                     <button type="submit" className="btn btn-primary">
                         {isLogin ? 'Login' : 'Register'}
                     </button>
                 </form>
                 <div>OR------</div>
                 <div className="from-group">
-                    <button  onClick={googleSignIn} className="btn btn-primary " ><i class="fab fa-google fw-5 text-warning">  </i>  sign in</button>
+                    <button onClick={handleGoogleLogin} className="btn btn-primary " ><i class="fab fa-google fw-5 text-warning">  </i>  sign in</button>
                 </div>
             </div>
         </div>
