@@ -1,0 +1,17 @@
+.banner_blur{
+    margin-bottom:200px ;
+    background-color:#ebf5f573 ;
+    border-radius: 10px;
+    box-shadow: 55px 48px 76px 1px;
+}
+.banner_blur h1{
+    color: rgba(14, 12, 13, 0.952);
+    font-size: 60px;
+}
+.banner_blur h6 ,p{
+    font-size: 25px;
+    color: rgba(14, 12, 13, 0.952);
+}
+.opacity{
+    opacity: 0.8;
+}

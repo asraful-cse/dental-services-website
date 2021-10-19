@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "60795d4e0489a32f948c4167",
+        "name": "Tooth Restorations",
+        "price": "132",
+        "description": "We can replace missing teeth or repair missing parts of the tooth structure.",
+        "imageURL": "https://i.ibb.co/72ZdRvF/1.jpg",
+        "details":"We are use medication to help patients relax during dental procedures. It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia."
+    },
+    {
+        "_id": "60795e440489a32f948c4168",
+        "name": "Implant Dentistry",
+        "price": "221",
+        "description": "Dental implants are the closest you can get to healthy, natural teeth.",
+        "imageURL": "https://i.ibb.co/wzBFXYf/Young-man-choosing-color-of-teeth-at-dentist.jpg",
+        "details":"Minimal sedation – you are awake but relaxed. Moderate sedation (formerly called “conscious sedation”) – you may slur your words when speaking and not remember much of the procedure.Deep sedation – you are on the edge of consciousness but can still be awakened."
+    },
+    {
+        "_id": "60795fc20489a32f948c4169",
+        "name": "Cosmetic Dentistry",
+        "price": "105",
+        "description": "Cosmetic Dentistry improve the appearance of an individual’s teeth.",
+        "imageURL": "https://i.ibb.co/KjDWRcz/Woman-patient-visiting-dentist.jpg",
+        "details":"We are use medication to help patients relax during dental procedures. It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia."
+    },
+    {
+        "_id": "6079615d0489a32f948c416avf",
+        "name": "Parodontosis",
+        "price": "434",
+        "description": "Timely treated parodontosis disease can save you from tooth loss.",
+        "imageURL": "https://i.ibb.co/nwz0Wxp/4.jpg",
+        "details":"We are use medication to help patients relax during dental procedures. It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia."
+     },
+    {
+        "_id": "6079615d0489a32f948c416ass",
+        "name": "Dental Radiography",
+        "price": "934",
+        "description": "Dental X-rays are a useful tool that help to diagnose and plan treatments.",
+        "imageURL": "https://i.ibb.co/6gpRwyd/5.jpg",
+        "details":"We are use medication to help patients relax during dental procedures. It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia."
+    },
+    {
+        "_id": "6079615d0489a32f948c416aer",
+        "name": "Crowns & Bridges",
+        "price": "1114",
+        "description": "We’ll design, produce and insert ceramic structure all in one single appointment.",
+        "imageURL": "https://i.ibb.co/tpXc4kq/6.jpg",
+        "details":"We are use medication to help patients relax during dental procedures. It’s sometimes referred to as “sleep dentistry,” although that’s not entirely accurate. Patients are usually awake with the exception of those who are under general anesthesia."
+    }
+]
