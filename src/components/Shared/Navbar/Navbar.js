@@ -17,14 +17,9 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto">
-
                             <Link to="/home" className="nav-link">HOME</Link>
                             <Link to="/about" className="nav-link">ABOUT US</Link>
-                            
-
                             <Link to="/contacts" className="nav-link">CONTACTS</Link>
-
-
                             {user.email && <p><strong className="text-success mx-1">{user.displayName}</strong></p>
 
                             }

@@ -90,12 +90,13 @@ const Login = () => {
             })
     }
     return (
-        <div className="main d-flex justify-content-center align-items-center">
-            <div className="mx-5 container" style={{ height: '600px', width: '480px' }}>
+        <div className="main container d-flex justify-content-center align-items-center" style={{ height: '550px', width: '480px' ,border:'1px solid gray' }}>
+            <div className="mx-5 container" >
                 <form onSubmit={handleRegistration}>
                     <h4 className="text-dark text-center fw-bold"><i class="fas fa-user-edit text-warning"></i> <br />
                         Hi !!  User  Please {isLogin ? <strong className="text-success">Login</strong> : <strong className="text-danger"> Register </strong>}
                     </h4>
+                    <br />
                     {!isLogin && <div className="row mb-3">
                         <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
                         <div className="col-sm-10">
@@ -105,13 +106,13 @@ const Login = () => {
                     <div className="row mb-3">
                         <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                         <div className="col-sm-10">
-                            <input onBlur={handleEmailChange} type="email" className="form-control" id="inputEmail3" required />
+                            <input onBlur={handleEmailChange} placeholder="Your email" type="email" className="form-control" id="inputEmail3" required />
                         </div>
                     </div>
                     <div className="row mb-3">
                         <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                         <div className="col-sm-10">
-                            <input type="password" onBlur={handlePasswordChange} className="form-control" id="inputPassword3" required />
+                            <input type="password" onBlur={handlePasswordChange}  placeholder="Your password" className="form-control" id="inputPassword3" required />
                         </div>
                     </div>
                     <div className="row mb-3">
@@ -130,9 +131,9 @@ const Login = () => {
                         {isLogin ? 'Login' : 'Register'}
                     </button>
                 </form>
-                <div>-------------- OR ------------------------</div>
-                <div className="from-group d-flex justify-content-center align-items-center ">
-                    <button onClick={googleSignIn} className="btn btn-primary " ><i class="fab fa-google fw-5 text-warning">  </i>  sign in</button>
+                <div>OR------</div>
+                <div className="from-group">
+                    <button  onClick={googleSignIn} className="btn btn-primary " ><i class="fab fa-google fw-5 text-warning">  </i>  sign in</button>
                 </div>
             </div>
         </div>

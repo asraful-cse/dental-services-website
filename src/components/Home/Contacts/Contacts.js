@@ -5,7 +5,10 @@ const Contacts = () => {
         <section className="contact  py-5">
             <div className="container">
                 <div className="section-header text-center text-dark mb-5">
-                    <h4 className="text-warning">Contact</h4>
+                    <h4 className="text-warning">Contact</h4> <br />
+                    <small className="text-center">Best suitable to show your valuable services like Dental Care, Oral Care, Gum treatments, <br />
+                        Dental surgeon list, Gum care treatments, Cavity treatment, Dental floss, <br /> Orthodontist, sealants, Dental Procedures,<br /> Root canal treatments and medical service. <br /> Suits also pediatric service, veterinary <br /> doctors, outpatients, medical emergency, cosmetic treatment <br /> sustainability goals with many extraordinary. </small>
+                    <br /> <br />
                     <h1>Leave Your Message</h1>
                 </div>
                 <div className="col-md-9 mx-auto ">
