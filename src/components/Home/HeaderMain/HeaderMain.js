@@ -1,7 +1,7 @@
 import React from 'react';
-// import clinicBanner1 from '../../../images/1.jpg';
-// import clinicBanner2 from '../../../images/2.jpg';
-// import clinicBanner3 from '../../../images/3.jpg';
+import clinicBanner1 from '../../../images/1.jpg';
+import clinicBanner2 from '../../../images/2.jpg';
+import clinicBanner3 from '../../../images/3.jpg';
 import './HeaderMain.css'
 
 const HeaderMain = () => {
@@ -14,7 +14,7 @@ const HeaderMain = () => {
                 </div>
                 <div class="carousel-inner"  >
                     <div class="carousel-item active">                    
-                        <img src="" class="d-block w-100 opacity" alt="..." />
+                        <img src={clinicBanner1} class="d-block w-100 opacity" alt="..." />
                         <div class="carousel-caption d-none d-md-block banner_blur" >
                             <h1 className="fw-bold">The Modern Dentistry <br /> You've Been Missing </h1>
                             <br />
@@ -23,7 +23,7 @@ const HeaderMain = () => {
                         </div>   
                     </div>
                     <div class="carousel-item">
-                        <img src="" class="d-block w-100 opacity" alt="..." />
+                        <img src={clinicBanner2} class="d-block w-100 opacity" alt="..." />
                         <div class="carousel-caption d-none d-md-block  banner_blur">
                             <h1 className="fw-bold" >We Offer Full-Scale <br /> Services You Need!</h1>
                             <br />
@@ -32,7 +32,7 @@ const HeaderMain = () => {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="" class="d-block w-100 opacity" alt="..." />
+                        <img src={clinicBanner3} class="d-block w-100 opacity" alt="..." />
                         <div class="carousel-caption d-none d-md-block banner_blur " >
                             <h1 className="fw-bold">Complete Oral Health <br /> Starts Here and Now!</h1>
                             <br />
