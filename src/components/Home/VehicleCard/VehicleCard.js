@@ -24,7 +24,7 @@ const VehicleCard = (props) => {
                 <div className="card-footer">
                     <div className="d-flex align-items-center justify-content-between ">
                         <h3 className="text-warning fw-bold">$ {price}</h3>
-                        <Link to={`/bookVehicle/${_id}`}>
+                        <Link to={`/service_detail/${_id}`}>
                             <button className="btn btn-success">Book Now</button>
                         </Link>
                     </div>

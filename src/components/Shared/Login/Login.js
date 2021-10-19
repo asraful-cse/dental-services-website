@@ -130,7 +130,7 @@ const Login = () => {
                         {isLogin ? 'Login' : 'Register'}
                     </button>
                 </form>
-                <div>--------------------------- OR -----------------------</div>
+                <div>-------------- OR ------------------------</div>
                 <div className="from-group d-flex justify-content-center align-items-center ">
                     <button onClick={googleSignIn} className="btn btn-primary " ><i class="fab fa-google fw-5 text-warning">  </i>  sign in</button>
                 </div>
