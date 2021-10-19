@@ -8,5 +8,5 @@
 * Our goal is to provide our patients with the best possible dental care in an environment of comfort and compassion.!
 
 
-## LIVE LINK :
-* (https://dental-clinic-88bb4.firebaseapp.com/)[https://dental-clinic-88bb4.firebaseapp.com/]
+## LIVE LINK : [https://dental-clinic-88bb4.firebaseapp.com/]
+

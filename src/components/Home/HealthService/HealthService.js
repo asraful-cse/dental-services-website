@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ServiceCard from '../ServiceCard/ServiceCard';
-// import VehicleCard from '../VehicleCard/ServiceCard';
-
-
 const HealthService = () => {
     const [healthServices, setHealthServices] = useState([]);
 
