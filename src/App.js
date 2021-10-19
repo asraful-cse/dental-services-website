@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import ApplyPage from "./components/ApplyPage/ApplyPage";
 import AboutUs from "./components/Home/AboutUs/AboutUs";
 import Contacts from "./components/Home/Contacts/Contacts";
 import Home from "./components/Home/Home/Home";
@@ -33,7 +34,7 @@ function App() {
             <Login></Login>
           </Route>
           <Route path="/services">
-           <Service></Service>
+            <Service></Service>
           </Route>
           <Route path="/about">
             <AboutUs />
@@ -44,6 +45,9 @@ function App() {
           <PrivetRoute path="/service_detail/:id">
             <ServiceDetail></ServiceDetail>
           </PrivetRoute>
+          <Route path="/apply">
+            <ApplyPage></ApplyPage>
+          </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>

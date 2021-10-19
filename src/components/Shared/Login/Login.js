@@ -90,7 +90,7 @@ const Login = () => {
             })
     }
     return (
-        <div className="main container d-flex justify-content-center align-items-center" style={{ height: '550px', width: '480px' ,border:'1px solid gray' }}>
+        <div className="main container d-flex justify-content-center align-items-center" style={{ height: '550px', width: '680px' ,border:'1px solid gray' }}>
             <div className="mx-5 container" >
                 <form onSubmit={handleRegistration}>
                     <h4 className="text-dark text-center fw-bold"><i class="fas fa-user-edit text-warning"></i> <br />

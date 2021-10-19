@@ -18,7 +18,7 @@ const HealthService = () => {
     return (
         <section id="book-ride" className="mt-5 container">
             <h2 className="text-center fw-bolder"> OUR DENTAL <span style={{ color: '#ff4d30' }}>TREATMENTS SERVICES</span></h2>
-            <p style={{ fontSize: '14px', color: 'gray' }} className="text-center">Best suitable to show your valuable services like Dental Care,
+            <p style={{ fontSize: '18px', color: 'gray',textAlign:'justify' }} className="text-center">Best suitable to show your valuable services like Dental Care,
                 Oral Care, Gum treatments, <br />
                 Dental surgeon list, Gum care treatments, Cavity treatment,
                 Dental floss, Orthodontist, sealants, Dental Procedures, Root canal
@@ -28,7 +28,7 @@ const HealthService = () => {
             <br /> <br />
             <div className="row">
                 {
-                    healthServices.map(services => <ServiceCard services={services}></ServiceCard>)
+                    healthServices.map(services => <ServiceCard key={services._id} services={services}></ServiceCard>)
                 }
             </div>
         </section>

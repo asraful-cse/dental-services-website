@@ -20,6 +20,7 @@ const TestimonialCard = (props) => {
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
+                       
                     </div>
                 </div>
             </div>

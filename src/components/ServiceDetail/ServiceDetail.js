@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ServiceDetail = () => {
     const { id } = useParams();
@@ -12,7 +12,7 @@ const ServiceDetail = () => {
 
     const ExactIteam = data.filter(td => td._id === id);
     return (
-        <div className="card mb-3 container" style={{ maxWidth: '100%', marginTop:'50px' , textAlign:"center" }}>
+        <div className="card mb-3 container" style={{ maxWidth: '100%', marginTop: '50px', textAlign: "center" }}>
             <div className="row g-0">
                 <div className="col-md-3">
                     <img src={ExactIteam[0]?.imageURL} className="img-fluid rounded-start" alt="..." />
@@ -20,10 +20,13 @@ const ServiceDetail = () => {
                 <div className="col-md-9 ">
                     <div className="card-body">
                         <h5 className="card-title text-warning text-uppercase fw-bold">{ExactIteam[0]?.name} </h5>
-                        <p className="card-text">{ExactIteam[0]?.description}</p> 
+                        <p className="card-text">{ExactIteam[0]?.description}</p>
                         <strong className="card-text"><small className="text-muted">{ExactIteam[0]?.details}</small></strong>
-                        
+
                     </div>
+                    <Link to='/apply'>
+                        <button className="btn btn-success">Apply Now</button>
+                    </Link>
                 </div>
             </div>
         </div>

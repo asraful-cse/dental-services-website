@@ -3,3 +3,16 @@
     transform: scale(1.2);
     transition: transform 1s;
 }
+.card_border{
+    border-radius: 10px !important;
+    box-shadow: 0px 9px 29px -4px;
+}
+.name h5{
+    font-size: 23px;
+    text-transform: uppercase;
+    color: rgb(12, 82, 58);
+}
+.name p{
+    font-size: 14px;
+    color: gray;
+}
