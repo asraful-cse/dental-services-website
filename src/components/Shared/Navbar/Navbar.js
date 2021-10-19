@@ -10,14 +10,15 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <div className="d-flex">
-                        <img src={clinicLogo} style={{ height: '40px', width: '200px' }} alt="" />
+                        <img src={clinicLogo} style={{ height: '40px', width: '200px', marginTop:'0px'}} alt="" />
                     </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="collapse navbar-collapse fw-bold" id="navbarNavAltMarkup" style={{ marginTop:'26px'}}>
                         <div className="navbar-nav ms-auto">
                             <Link to="/home" className="nav-link">HOME</Link>
+                            <Link to="/services" className="nav-link">SERVICES</Link>
                             <Link to="/about" className="nav-link">ABOUT US</Link>
                             <Link to="/contacts" className="nav-link">CONTACTS</Link>
                             {user.email && <p><strong className="text-success mx-1">{user.displayName}</strong></p>
@@ -25,11 +26,11 @@ const Navbar = () => {
                             }
                             {user.email ?
                                 <Link to="/login">
-                                    <button onClick={logOut} className="btn btn-warning me-1" >SIGN OUT</button>
+                                    <button onClick={logOut} className="btn btn-danger me-1" >SIGN OUT</button>
                                 </Link>
                                 :
                                 <Link to="/login">
-                                    <button className="btn btn-warning me-1" >LOGIN</button>
+                                    <button className="btn btn-success me-1" >LOGIN</button>
                                 </Link>
                             }
                             <br />

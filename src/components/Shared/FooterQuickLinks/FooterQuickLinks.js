@@ -23,8 +23,8 @@ const FooterQuickLinks = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/login" style={{textDecoration:'none'}} className="text-white">
-                        <FontAwesomeIcon icon={faCommentDots} /> <span>LOGIN</span>
+                    <Link to="/services" style={{textDecoration:'none'}} className="text-white">
+                        <FontAwesomeIcon icon={faCommentDots} /> <span>SERVICES</span>
                     </Link>
                 </li>
             </ul>

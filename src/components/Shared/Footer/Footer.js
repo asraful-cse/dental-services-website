@@ -6,7 +6,7 @@ import FooterQuickLinks from '../FooterQuickLinks/FooterQuickLinks';
 
 const Footer = () => {
     return (
-        <footer className="bg-cyan py-3" style={{marginTop:'30px', backgroundColor:'#474c3d73'}}>
+        <footer className="bg-cyan py-3" style={{marginTop:'30px', backgroundColor:'rgb(65 75 90 / 61%)'}}>
             <div className="container">
                 <div className="row d-flex justify-content-center align-items-center text-white">
                     <div className="col-md-4 d-flex">
