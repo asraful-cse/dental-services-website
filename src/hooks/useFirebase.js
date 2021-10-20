@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import authInit from "../components/Shared/Login/firebase/firebase.init";
 authInit();
@@ -8,18 +8,13 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
 
-    console.log(user);
 
     const googleSignIn = () => {
         setIsLoading(true)
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            // .then((result) => {
-            //     const user = result.user;
-            //     setUser(user)
+    return signInWithPopup(auth, googleProvider)
 
-            // })
-            // .finally(() => setIsLoading(false));
+            .finally(() => setIsLoading(false));
     }
 
     useEffect(() => {
@@ -27,7 +22,7 @@ const useFirebase = () => {
             if (user) {
                 setUser(user)
             } else {
-                setUser({ })
+                setUser({})
             }
             setIsLoading(false)
         });
@@ -37,8 +32,8 @@ const useFirebase = () => {
     const logOut = () => {
         setIsLoading(true)
         signOut(auth).then(() => { })
-        .finally(() => setIsLoading(false))
-    } 
+            .finally(() => setIsLoading(false))
+    }
     return {
         user,
         googleSignIn,

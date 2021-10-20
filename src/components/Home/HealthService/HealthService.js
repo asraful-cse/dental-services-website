@@ -8,7 +8,6 @@ const HealthService = () => {
         fetch('./fakeData.json')
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setHealthServices(data);
             })
     }, [])

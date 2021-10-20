@@ -4,7 +4,6 @@ import useAuth from '../../../hooks/useAuth';
 import clinicLogo from '../../../images/clinic.png'
 const Navbar = () => {
     const { logOut, user } = useAuth();
-    console.log(user);
     return (
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light">
